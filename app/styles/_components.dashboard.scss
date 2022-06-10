@@ -34,6 +34,9 @@
   padding: 16px 8px;
   border: 1px solid #dcdee3;
   background-color: #e5e9f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-chart__container {
@@ -47,5 +50,18 @@
   color: white;
   min-width: 120px;
   padding: 0 16px;
+  border-radius: 4px;
+}
+
+.c-filters__input {
+  margin-right: 10px;
+}
+
+.c-button__clear {
+  height: 32px;
+  background-color: #0099ff;
+  color: white;
+  min-width: 80px;
+  padding: 0 12px;
   border-radius: 4px;
 }

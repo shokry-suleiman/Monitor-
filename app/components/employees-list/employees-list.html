@@ -16,10 +16,10 @@
         <div>{{ employee.profile.name }}</div>
       </div>
     </div>
-    <div> {{ employee.email }} </div>
+    <div ng-bind-html="employee.email | highlight: EmployeesListComponentVm.filter"></div>
     <div> {{ employee.profile.address }} </div>
     <div> {{ employee.start_date | date }} </div>
     <div> {{ employee.performance_index }} </div>
-    <div> {{ employee.profile.about }} </div>
+    <div ng-bind-html="employee.profile.about | highlight: EmployeesListComponentVm.filter"></div>
   </div>
 </div>
