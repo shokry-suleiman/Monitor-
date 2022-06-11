@@ -49,3 +49,27 @@
   padding: 0 16px;
   border-radius: 4px;
 }
+
+.c-filters__daterange {
+  display: flex;
+  align-items: center;
+}
+
+.c-filters__startdate {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.c-filters__enddate {
+  display: flex;
+  align-items: center;
+}
+
+.c-filters__label {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-right: 5px;
+  font-size: 16px;
+}
