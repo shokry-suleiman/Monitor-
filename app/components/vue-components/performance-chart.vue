@@ -87,7 +87,18 @@ export default {
           transitionDuration: 0,
           confine: false,
           hideDelay: 0,
-          padding: 0,
+          padding: 10,
+          backgroundColor: '#172236',
+          borderColor: '#172236',
+          borderWidth: '0.8',
+          textStyle: {
+              color: '#FFF'
+          },
+          formatter: function (params) {
+            console.log('params',params)
+            return `<div style="text-align:center;font-weight:600">${params[0].name}</div>
+              ${params[0].marker} Team Performance Index: ${(Math.round(params[0].value))}%`;
+          }
         },
         grid: {
           left: "30px",
@@ -123,10 +134,34 @@ export default {
             symbolSize: 2,
             cursor: "default",
             lineStyle: {
-              width: 2,
+              width: 2
             },
           },
         ],
+        visualMap: {
+        top: 50,
+        right: 10,
+        pieces: [
+          {
+            gt: 0,
+            lte: 50,
+            color: '#ee5f48'
+          },
+          {
+            gt: 50,
+            lte: 80,
+            color: '#f8d530'
+          },
+          {
+            gt: 80,
+            lte: 100,
+            color: '#178b48'
+          }
+        ],
+        outOfRange: {
+          color: '#999'
+        }
+      },
       };
     },
 
