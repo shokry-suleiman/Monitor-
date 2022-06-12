@@ -18,6 +18,7 @@
     "angularjs-template-loader": "^0.1.2",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "cypress": "^10.1.0",
     "eslint": "^8.6.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
@@ -40,6 +41,7 @@
     "webpack-dev-server": "^4.7.3"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --progress"
+    "start": "webpack-dev-server --open --progress",
+    "cypress:open": "cypress open"
   }
 }
