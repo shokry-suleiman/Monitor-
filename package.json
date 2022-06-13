@@ -40,6 +40,9 @@
     "webpack-dev-server": "^4.7.3"
   },
   "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn run clean && webpack --mode production",
     "start": "webpack-dev-server --open --progress"
+
   }
 }
