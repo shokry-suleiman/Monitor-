@@ -6,7 +6,11 @@
   <employees-list employees-list="homePageVm.employees"></employees-list>
 
   <div class="c-dashboard__footer">
-    <button class="c-button">
+    <button class="c-button__load"
+      ng-disabled="homePageVm.isSubmitting"
+      ng-show="homePageVm.load" 
+      ng-click="homePageVm.loadMoreEmployees()">
+      <div class="c-loader" ng-show="homePageVm.isSubmitting"></div>
       Load More
     </button>
   </div>
