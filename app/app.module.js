@@ -4,6 +4,7 @@ import 'ngVue/build/plugins.js';
 import PerformancePageComponent from './pages/performance-page.vue';
 import PerformanceChartComponent from './components/vue-components/performance-chart.vue';
 import store from './store';
+import './filters/filter-by-daterange';
 
 angular.module('appModule', [
   'ui.router',
