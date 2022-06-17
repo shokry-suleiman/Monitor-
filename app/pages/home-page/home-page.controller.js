@@ -20,7 +20,7 @@ function homePageController(Employees) {
         } else {
           homePageVm.load = true;
         }
-        // homePageVm.isSubmitting = false;
+        homePageVm.isSubmitting = false;
       });
   }
 
