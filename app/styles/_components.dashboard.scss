@@ -41,11 +41,35 @@
   width: 760px;
 }
 
-.c-button {
+.c-button__load {
   height: 40px;
   background-color: #0099ff;
   color: white;
   min-width: 120px;
   padding: 0 16px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button[disabled]{
+  background: #79bae6;
+  cursor: default;
+}
+
+.c-loader {
+  display: inline-block;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
