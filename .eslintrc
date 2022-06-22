@@ -27,7 +27,8 @@
     "no-bitwise": 0,
     "no-restricted-globals": 0,
     "class-methods-use-this": 0,
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "no-shadow": "off"
   },
   "globals": {
     "angular": true,
